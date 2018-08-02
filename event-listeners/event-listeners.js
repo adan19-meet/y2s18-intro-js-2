@@ -21,16 +21,20 @@ function showNextPicture() {
   // if currentIndex is too large, start from the beginning again
   if (currentIndex >= pictures.length) {
     currentIndex = 0;
+    document.getElementById('image').src="./imgs/dog.jpg";
+
+
   }
+  
   else if (currentIndex == 1) {
   	document.getElementById('image').src="./imgs/cat1.jpg";
 }
 else{
 	document.getElementById('image').src="./imgs/cat2.jpg";
-}
+}}
 
 
-  }
+  
 
 
   // YOUR TASK: Finish this function!
